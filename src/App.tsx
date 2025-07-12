@@ -121,7 +121,7 @@ function App() {
             />
             <button
               onClick={addTask}
-              className="p-2 px-4 rounded-2xl text-white bg-white/10 hover:bg-white/20 border border-white/30 shadow-md hover:shadow-lg transition w-full">
+              className="p-2 px-4 rounded-2xl text-white bg-white/10 hover:bg-white/20 border border-white/30 shadow-md hover:shadow-lg transition w-full cursor-pointer">
               Add
             </button>
           </div>
@@ -167,7 +167,7 @@ function App() {
                 </div>
                 <button
                   onClick={() => deleteTask(task.id)}
-                  className="text-sm px-3 py-1 rounded bg-white/10 hover:bg-white/20 border border-white/20 text-red-200 hover:text-red-300 shadow-md hover:shadow-lg transition">
+                  className="text-sm px-3 py-1 rounded bg-white/10 hover:bg-white/20 border border-white/20 text-red-200 hover:text-red-300 shadow-md hover:shadow-lg transition cursor-pointer">
                   Delete
                 </button>
               </div>
@@ -181,7 +181,7 @@ function App() {
                 key={type}
                 onClick={() => setFilter(type as any)}
                 className={`
-                  px-3 py-1 rounded
+                  px-3 py-1 rounded cursor-pointer
                   ${filter === type
                     ? "bg-white/20 font-bold shadow-md"
                     : "hover:bg-white/10"
